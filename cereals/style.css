@@ -1,0 +1,205 @@
+body{ /*Color de fons header + navbar*/
+    background-color: whitesmoke;
+}
+header{ 
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    position:static;
+    height: 145px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#menubar ul li{ /*Navbar*/
+    position: sticky;
+    display: inline;
+}
+#menubar ul li a{
+    text-decoration: none;
+    background-color: rgba(255,255,255, .5);
+    border-radius: .2cm;
+    transition: .5s;
+}
+#menubar ul li a:hover{ /*Animació hovering*/
+    text-decoration: none;
+    background-color: rgba(0,0,0, .5);
+    border-radius: .2cm;
+    transition: .5s;
+
+}
+
+/*Contingut de la pàgina web*/
+
+#background { /*Fons de la divisió de contingut*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cereals.jpg");
+    border-radius: .2cm;
+    position: absolute;
+    margin: 0px;
+}
+
+main{
+    position: relative;
+    color: black;
+    background-color: rgba(255,255,255, .3);
+    border-radius: .2cm;
+    text-align: center;
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 350px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#bol{
+    float: right;
+    margin-right: 15px;
+    width: 250px;
+}
+#avena{
+    float:left;
+    margin-left: 15px;
+    width: 300px;
+}
+main ul{
+    text-align:left;
+}
+main ul li p{
+    text-decoration: none;
+    padding: 0px;
+}
+aside{
+    background-color: rgba(255,255,255, .3);
+    border-radius: .2cm;
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#comentaris{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+#comentaris input, textarea{
+    grid-column: 2/3;
+    background-color: rgba(255,255,255, .7);
+    width: 70%;
+}
+#comentaris button{
+    grid-column: 2/3;
+    width: 30%;
+}
+#comentaris label{
+    grid-column: 1/2;
+}
+.ressenya {
+    grid-template-columns: 50px 1fr;
+    text-align:justify;
+    margin-left: 15px;
+    line-height: 50%;
+}
+.ressenya img{
+    grid-column:1/2;
+}
+.ressenya h3, h5, p{
+    grid-column:2/2;
+}
+footer{
+    color: white;
+}
+
+/*Apartat per a aportar responsive-ness*/
+
+@media only screen and (max-width:768px) {/*Format tablet*/
+    #menubar ul li{
+        display: block; /*Necessari per a adaptar a tablet*/
+    }
+    #menubar ul li a{
+        text-decoration: none;
+        width: 200px;
+        padding: 5px;
+        background-color: rgba(255,255,255, .5);
+        border-radius: .2cm;
+        transition: .5s;
+    }
+    #menubar ul li a:hover{
+        text-decoration: none;
+        width: 200px;
+        padding: 5px;
+        background-color: rgba(255,255,255, .7);
+        border-radius: .2cm;
+        transition: .5s;
+    }
+    aside{
+        height: auto;
+        width: 200px;
+        position: fixed;
+        top: 250px;
+        background-color: rgba(255,255,255, .3);
+        border-radius: .2cm;
+        right: 8px;
+        font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:640px) {/*Format movil*/
+    #menubar ul li{
+        display: block; /*Necessari per a adaptar a movil*/
+    }
+    #menubar ul li a{
+        text-decoration: none;
+        width: 200px;
+        padding: 0px;
+        background-color: rgba(255,255,255, .5);
+        border-radius: .2cm;
+        transition: .5s;
+    }
+    #menubar ul li a:hover{
+        text-decoration: none;
+        width: 200px;
+        padding: 0px;
+        background-color: rgba(255,255,255, .7);
+        border-radius: .2cm;
+        transition: .5s;
+    }
+    aside{
+        height: auto;
+        position:static;
+        bottom: 150px;
+        background-color: rgba(255,255,255, .3);
+        border-radius: .2cm;
+        font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    main{
+        margin-left: 8px;
+        margin-right: 8px;
+        color: black;
+        background-color: rgba(255,255,255, .3);
+        border-radius: .2cm;
+        text-align: center;
+        font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #bol{
+        float: none;
+        margin-right: 15px;
+        width: 250px;
+    }
+    #avena{
+        float:none;
+        margin-left: 15px;
+        width: 300px;
+    }
+    main ul{
+        text-align:left;
+    }
+    main ul li p{
+        text-decoration: none;
+        padding: 0px;
+    }
+    footer{
+        color: white;
+        text-align: right;
+    }
+}
