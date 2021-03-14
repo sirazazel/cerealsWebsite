@@ -1,0 +1,119 @@
+body{ /*Color de fons header + navbar*/
+    background-color: white;
+    margin: 0px;
+
+}
+header{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    position:static;
+    height: 100px;
+    margin: 0px;
+    top: 0px;
+
+    text-align: center;
+    background-color: white;
+
+}
+#navbar{ /*Navbar*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+#navbar ul li{
+    display: inline-flex;
+    padding-left: 1cm;
+}
+#navbar ul li a{
+    text-decoration: none;
+    background-color: rgba(255,255,255, .5);
+    margin: 10px;
+    border-radius: .1cm;
+    transition: .5s;
+}
+#navbar ul li a:hover{ /*Animació hovering*/
+    display: block;
+    text-decoration: none;
+    background-color: rgba(0,0,0, .5);
+    border-radius: .1cm;
+    transition: .5s;
+}
+#logo{
+    width: 35px;
+    height: auto;
+}
+.sticky{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+/*Contingut de la pàgina web*/
+/*Continguts generals aplicables a totes les pàgines*/
+
+.contingut{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cereals.jpg");
+    border-radius: .3cm;
+    color: white;
+
+    /*Grid de la pàgina principal*/
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4fr;
+}
+main{
+    /*Posició*/
+    margin: 30px;
+    grid-column: 1/2;
+    grid-row: auto;
+
+    /*Estètica*/
+    background-color: rgba(80,80,80, .5);
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-justify: auto;
+}
+.title{
+    text-align: center;
+}
+#bol{
+    float: right;
+    margin-right: 15px;
+    width: 250px;
+}
+#avena{
+    float:left;
+    margin-left: 15px;
+    width: 300px;
+}
+#llistaCap{
+    margin-left: 330px
+}
+#usos {
+    margin-left: 300px;
+}
+aside{
+    /*Posició*/
+    margin: 30px;
+    grid-column: 2/3;
+    height: 100px;
+    
+    /*Estètica*/
+    background-color: rgba(80,80,80, .5);
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    text-justify: auto;
+    
+}
+footer{
+    /*Posició*/
+    margin: 30px;
+    grid-column: 2/3;
+    grid-row: 4;
+
+    /*Estètica*/
+    text-align: right;
+    
+}
