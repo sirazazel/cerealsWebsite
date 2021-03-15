@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
     <title>Cereals</title>
-    <link rel="stylesheet" type="text/css" href="style_correct.css">  
+    <link rel="stylesheet" type="text/css" href="style.css">  
 
 </head>
 
@@ -21,7 +21,7 @@
                 <li><img id = "logo" src="CEREAL_001.jpg"></li>
                 <li><a class = "active" href="index.htm">Inici</a></li>
                 <li><a href="ressenyes.htm">Ressenyes: conegui els millors cereals</a></li>
-                <li><a href="opinio.htm">L'opinió dels nostres usuaris</a></li>
+                <li><a href="exemple.htm">Pàgina d'exemple</a></li>
             </ul>
     </div>
     <div class = "contingut">
@@ -70,24 +70,6 @@
     </div>
 
 </body>
+<script src="script.js"></script>
 
-<script>
-    // script per a fixar el menú a top Opx, executa cada cop que baixam a la web.
-window.onscroll = function() {scrollingNavbar()};
-
-// cream variable per a la navbar
-var navbar = document.getElementById("navbar");
-
-// posició actual navbar
-var sticky = navbar.offsetTop;
-
-// quan la navbar arriba a top 0px, aplicam propietat sticky.
-function scrollingNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-} 
-</script>
 </html>
