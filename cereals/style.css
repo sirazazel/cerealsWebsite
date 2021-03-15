@@ -52,7 +52,7 @@ header{
 
 .contingut{
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cereals.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("imatges/cereals.jpg");
     border-radius: .3cm;
     color: white;
 
@@ -69,6 +69,7 @@ main{
     grid-row-end: 4;
 
     /*Estètica*/
+    padding: 10px;
     background-color: rgba(80,80,80, .5);
     border-radius: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,6 +84,7 @@ aside{
     height: 100px;
     
     /*Estètica*/
+    padding: 5px;
     background-color: rgba(80,80,80, .5);
     border-radius: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -133,6 +135,7 @@ footer{
 }
 
 #comentaris{
+    padding: 5px;
     display: grid;
     grid-template-columns: 200px 1fr;
 
@@ -141,12 +144,22 @@ footer{
     grid-column: 2/3;
     width: 70%;
 }
-#comentaris button{
-    grid-column: 2/3;
-    width: 30%;
-}
+
 #comentaris label{
     grid-column: 1/2;
+    
+}
+
+ #comentaris #enviar {
+    grid-column: 2;
+    grid-row: 6;
+    width: 2.5cm;
+    
+}
+#comentaris #reset {
+    grid-column: 1;
+    grid-row: 6;
+    width: 2.5cm;
 }
 
 @media only screen and (max-width:1024px) {/*Format tablet*/
@@ -178,7 +191,7 @@ footer{
         grid-row: 5;
     }
 }
-@media only screen and (max-width:640px) {/*Format mòbil*/
+@media only screen and (max-width:800px) {/*Format mòbil*/
     #navbar ul li{
         display: block;
         padding-top: 5px;
@@ -196,7 +209,7 @@ footer{
     #form{
         grid-column: 1;
         grid-row: 6;
-        height: 310px;
+        height: 350px;
     }
     aside{
         grid-column: 1;

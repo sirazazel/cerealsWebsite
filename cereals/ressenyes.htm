@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">  
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Cereals</title>
 
 </head>
 
 <body>
     <header>
-        <h1 id = "title">Pàgina d'admiració als cereals</h1>
-        <h3 id = "subtitle">Són els cereals Jesucrist baixat a la Terra?</h3>    
+        <h1 id="title">Pàgina d'admiració als cereals</h1>
+        <h3 id="subtitle">Són els cereals Jesucrist baixat a la Terra?</h3>
         <br>
     </header>
-    <div id= "navbar">
+    <div id="navbar">
         <ul>
-            <li><img id = "logo" src="CEREAL_001.jpg"></li>
-            <li><a class = "active" href="index.htm">Inici</a></li>
+            <li><img id="logo" src="imatges/CEREAL_001.jpg"></li>
+            <li><a class="active" href="index.htm">Inici</a></li>
             <li><a href="ressenyes.htm">Ressenyes: conegui els millors cereals</a></li>
             <li><a href="exemple.htm">Pàgina d'exemple</a></li>
         </ul>
     </div>
 
-    <div class = "contingut">
-    <main>
-        <ul id = "caixaComentaris">
-            <li class = "ressenya">
-                <div class = "text">
+    <div class="contingut">
+        <main>
+            <ul id="caixaComentaris">
+                <li class="ressenya">
                     <h3>Jaume Ribas</h3>
                     <h5>20, Cereals genèrics</h5>
                     <p> Te posen tot fort, putada sugar, estan to ricos pero no son buenos para il tuo cuerpo</p>
-                </div>
                 </li>
-            <li class = "ressenya">
-                <div class = "text">
+                <li class="ressenya">
                     <h3>Ramiro Quiroga</h3>
                     <h5>20, Cereals d'avena</h5>
-                    <p>Los cereales de avena están hechos con avena de trigo. Están muy buenos, ayudan a la digestión y al metabolismo.</p>
-                </div>
-            </li>
-            <li class = "ressenya">
-                <div class = "text">
+                    <p>Los cereales de avena están hechos con avena de trigo. Están muy buenos, ayudan a la digestión y
+                        al metabolismo.</p>
+                </li>
+                <li class="ressenya">
                     <h3 class>Uriel Soto</h3>
                     <h5>21, Chocoflakes</h5>
-                    <p>Estan de puta mare secs, estan de puta mare amb un tassó de llet devora, estan de puta mare dins sa llet. Post porro son la ostia pero per berenar estan bastant nice</p>
-                </div>
-            </li>
-            <li class = "ressenya">
-                <div class = "text">
+                    <p>Estan de puta mare secs, estan de puta mare amb un tassó de llet devora, estan de puta mare dins
+                        sa llet. Post porro son la ostia pero per berenar estan bastant nice</p>
+                </li>
+                <li class="ressenya">
                     <h3>Olga Alfaro</h3>
                     <h5>22, Golden Graham</h5>
-                    <p>He hecho una reseña de Golden Graham pero me he pasado de 35 palabras, así que Xesc me la ha censurado.</p>
-                </div>
-            </li>
-            <li class = "ressenya">
-                <div class = "text">
+                    <p>He hecho una reseña de Golden Graham pero me he pasado de 35 palabras, así que Xesc me la ha
+                        censurado.</p>
+                </li>
+                <li class="ressenya">
                     <h3>Uriel Soto</h3>
                     <h5>21, Chocapic</h5>
                     <p>GOAT des cereales dins llet, nada más que añadir
                         (llet freda obviament)</p>
-                </div>
-            </li>
-            <li class = "ressenya">
-                <div class = "text">
+                </li>
+                <li class="ressenya">
                     <h3>David Cardell</h3>
                     <h5>21, Chococrispis</h5>
-                    <p> Algo semblant a arroç frit o joquese amb xocolate que son bastant crunch en es principi pero així con se va fonent amb sa llet, se converteix en una pasta i es xocolate passa a escampar-se per sa llet</p>
-                </div>
-            </li>
-            <li class = "ressenya">
-                <div class = "text">
+                    <p> Algo semblant a arroç frit o joquese amb xocolate que son bastant crunch en es principi pero
+                        així con se va fonent amb sa llet, se converteix en una pasta i es xocolate passa a escampar-se
+                        per sa llet</p>
+                </li>
+                <li class="ressenya">
                     <h3>Sandra Cabrera</h3>
                     <h5>22, Cereals genèrics</h5>
                     <p>No me gustan los cereales, no sé qué me pides, es tarde, no abro los ojos ya.</p>
-                </div>
-            </li>
-            <li class = "ressenya"> 
-                <div class = "text">
+                </li>
+                <li class="ressenya">
                     <h3>Gabi Méndez</h3>
-                    <h5>23, Trigomiel, Colors, Rellenos de leche, Kellogs, Kellogs choco, Froot Loops, Lucky Charms, etc...</h5>
+                    <h5>23, Trigomiel, Colors, Rellenos de leche, Kellogs, Kellogs choco, Froot Loops, Lucky Charms,
+                        etc...</h5>
                     <p>DIOS ME FLIPAN LOS CEREALES</p>
-                </div>
-            </li>
-        </ul>  
-    </main>
-    <aside>
-        <h3>Consell del dia</h3>
-        <p>Comença el dia amb un bon bol de 3kg de chocapic.</p>
-    </aside>
-    <aside id = "form">
-        <h2>Envia-n's una nova suggerència de cereal.</h2>
-        
-        <form id = "comentaris" method="POST">
-            Nom <input type="text" name="nom" id = "nom" autofocus required><br>
-            Correu electrònic <input type="email" name="correu" id = "correu" required><br>
-            Cereal <input type="text" name="cereal" id = "cereal" required><br>
-            Edat<input type="int" name="age" pattern="[0-9]{2}" id = "edat"><br>
-            Escriu la nova ressenya. <textarea name="message" rows="3" cols="30" id = "ressenya">Escriu aquí la teva ressenya.</textarea> 
-            Envia! <input type="button" onclick="afegirComentari()" name="Enviar.."><br>
-        </form>
-        <br>
-    </aside>
-    <footer>
-        <p>©Associació d'Amants del Cereal, 2021</p>
-    </footer>
+                </li>
+            </ul>
+        </main>
+        <aside>
+            <h3>Consell del dia</h3>
+            <p>Comença el dia amb un bon bol de 3kg de chocapic.</p>
+        </aside>
+        <aside id="form">
+            <h2>Envia-n's una nova suggerència de cereal.</h2>
+
+            <form id="comentaris" method="POST">
+                Nom <input type="text" name="nom" id="nom" autofocus required><br>
+                Correu electrònic <input type="email" name="correu" id="correu" required><br>
+                Cereal <input type="text" name="cereal" id="cereal" required><br>
+                Edat<input type="int" name="age" pattern="[0-9]{2}" id="edat"><br>
+                Escriu la nova ressenya. <textarea maxlength="35" name="message" rows="3" cols="30"
+                    id="ressenya">Escriu aquí la teva ressenya.</textarea>
+                <input type="button" value = 'Enviar' onclick="afegirComentari()" name="Enviar" id = "enviar">
+                <input type='reset' value='Reset' name='reset' id = "reset">
+                <br>
+            </form>
+            <br>
+        </aside>
+        <footer>
+            <p>©Associació d'Amants del Cereal, 2021</p>
+        </footer>
     </div>
 </body>
 
