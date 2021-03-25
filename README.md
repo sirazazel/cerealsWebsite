@@ -1,2 +1,2 @@
-# llenguatgeDeMarques
-Projectes personals de l'assignatura Llenguatge de Marques. 1r ASIX DUAL 2020-2021
+# cereals
+Website project using responsive web design elements
